@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+
+</head>
+<body>
+    <div id="39e4b6308d874b67b76f337e337a20c1" class="chart-container" style="width:1200px; height:600px;"></div>
+    <script>
+        var chart_39e4b6308d874b67b76f337e337a20c1 = echarts.init(
+            document.getElementById('39e4b6308d874b67b76f337e337a20c1'), 'white', {renderer: 'canvas'});
+        var option_39e4b6308d874b67b76f337e337a20c1 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#00CCFF",
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "scatter",
+            "symbolSize": 20,
+            "data": [
+                [
+                    114.0,
+                    111.8,
+                    114.0,
+                    "Atlanta Hawks"
+                ],
+                [
+                    108.7,
+                    108.0,
+                    108.7,
+                    "Boston Celtics"
+                ],
+                [
+                    110.3,
+                    106.9,
+                    110.3,
+                    "Brooklyn Nets"
+                ],
+                [
+                    113.3,
+                    113.9,
+                    113.3,
+                    "Charlotte Hornets"
+                ],
+                [
+                    110.4,
+                    106.7,
+                    110.4,
+                    "Chicago Bulls"
+                ],
+                [
+                    108.7,
+                    105.1,
+                    108.7,
+                    "Cleveland Cavaliers"
+                ],
+                [
+                    107.6,
+                    109.5,
+                    107.6,
+                    "Dallas Mavericks"
+                ],
+                [
+                    108.7,
+                    109.3,
+                    108.7,
+                    "Denver Nuggets"
+                ],
+                [
+                    101.0,
+                    110.8,
+                    101.0,
+                    "Detroit Pistons"
+                ],
+                [
+                    113.1,
+                    100.2,
+                    113.1,
+                    "Golden State Warriors"
+                ],
+                [
+                    104.1,
+                    110.1,
+                    104.1,
+                    "Houston Rockets"
+                ],
+                [
+                    110.3,
+                    108.3,
+                    110.3,
+                    "Indiana Pacers"
+                ],
+                [
+                    106.4,
+                    105.0,
+                    106.4,
+                    "Los Angeles Clippers"
+                ],
+                [
+                    107.6,
+                    108.2,
+                    107.6,
+                    "Los Angeles Lakers"
+                ],
+                [
+                    110.7,
+                    110.4,
+                    110.7,
+                    "Memphis Grizzlies"
+                ],
+                [
+                    110.7,
+                    107.9,
+                    110.7,
+                    "Miami Heat"
+                ],
+                [
+                    111.0,
+                    107.1,
+                    111.0,
+                    "Milwaukee Bucks"
+                ],
+                [
+                    107.3,
+                    108.8,
+                    107.3,
+                    "Minnesota Timberwolves"
+                ],
+                [
+                    106.7,
+                    112.7,
+                    106.7,
+                    "New Orleans Pelicans"
+                ],
+                [
+                    109.5,
+                    110.6,
+                    109.5,
+                    "New York Knicks"
+                ],
+                [
+                    100.7,
+                    110.1,
+                    100.7,
+                    "Oklahoma City Thunder"
+                ],
+                [
+                    102.1,
+                    112.9,
+                    102.1,
+                    "Orlando Magic"
+                ],
+                [
+                    110.3,
+                    110.0,
+                    110.3,
+                    "Philadelphia 76ers"
+                ],
+                [
+                    111.0,
+                    104.1,
+                    111.0,
+                    "Phoenix Suns"
+                ],
+                [
+                    110.3,
+                    113.2,
+                    110.3,
+                    "Portland Trail Blazers"
+                ],
+                [
+                    110.2,
+                    112.5,
+                    110.2,
+                    "Sacramento Kings"
+                ],
+                [
+                    108.0,
+                    108.1,
+                    108.0,
+                    "San Antonio Spurs"
+                ],
+                [
+                    109.3,
+                    109.6,
+                    109.3,
+                    "Toronto Raptors"
+                ],
+                [
+                    117.3,
+                    106.5,
+                    117.3,
+                    "Utah Jazz"
+                ],
+                [
+                    108.5,
+                    109.3,
+                    108.5,
+                    "Washington Wizards"
+                ]
+            ],
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8,
+                "formatter": function(params){return params.value[3];}
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                ""
+            ],
+            "selected": {
+                "": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "formatter": function (params) {return '\u8fdb\u653b\u6548\u7387'+ params.value[0] + ' : \u9632\u5b88\u6548\u7387' + params.value[1];},
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "xAxis": [
+        {
+            "type": "value",
+            "name": "\u8fdb\u653b\u6548\u7387",
+            "show": true,
+            "scale": false,
+            "nameLocation": "center",
+            "nameGap": 30,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "min": 99.7,
+            "max": 118.3,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                114.0,
+                108.7,
+                110.3,
+                113.3,
+                110.4,
+                108.7,
+                107.6,
+                108.7,
+                101.0,
+                113.1,
+                104.1,
+                110.3,
+                106.4,
+                107.6,
+                110.7,
+                110.7,
+                111.0,
+                107.3,
+                106.7,
+                109.5,
+                100.7,
+                102.1,
+                110.3,
+                111.0,
+                110.3,
+                110.2,
+                108.0,
+                109.3,
+                117.3,
+                108.5
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "type": "value",
+            "name": "\u9632\u5b88\u6548\u7387",
+            "show": true,
+            "scale": false,
+            "nameLocation": "center",
+            "nameGap": 30,
+            "gridIndex": 0,
+            "inverse": true,
+            "offset": 0,
+            "splitNumber": 5,
+            "min": 99.2,
+            "max": 114.9,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
+    "title": [
+        {
+            "text": "\u672c\u8d5b\u5b63\u6240\u6709\u7403\u961f\u8fdb\u653b\u6548\u7387\u4e0e\u9632\u5b88\u6548\u7387\u6563\u70b9\u56fe",
+            "subtext": "\u8fdb\u653b\u6548\u7387\u8d8a\u5927\u8d8a\u597d,\u9632\u5b88\u6548\u7387\u8d8a\u5c0f\u8d8a\u597d",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ]
+};
+        chart_39e4b6308d874b67b76f337e337a20c1.setOption(option_39e4b6308d874b67b76f337e337a20c1);
+    </script>
+</body>
+</html>

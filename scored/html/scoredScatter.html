@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+
+</head>
+<body>
+    <div id="8d5dc4259a3b4dbb92ef17e166f289c9" class="chart-container" style="width:1200px; height:600px;"></div>
+    <script>
+        var chart_8d5dc4259a3b4dbb92ef17e166f289c9 = echarts.init(
+            document.getElementById('8d5dc4259a3b4dbb92ef17e166f289c9'), 'white', {renderer: 'canvas'});
+        var option_8d5dc4259a3b4dbb92ef17e166f289c9 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#00CCFF",
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "scatter",
+            "symbolSize": 20,
+            "data": [
+                [
+                    519,
+                    ".476",
+                    519,
+                    "Jayson Tatum",
+                    587
+                ],
+                [
+                    521,
+                    ".519",
+                    521,
+                    "Trae Young",
+                    527
+                ],
+                [
+                    526,
+                    ".573",
+                    526,
+                    "Kevin Durant",
+                    472
+                ],
+                [
+                    527,
+                    ".558",
+                    527,
+                    "Zach LaVine",
+                    505
+                ],
+                [
+                    538,
+                    ".566",
+                    538,
+                    "Giannis Antetokounmpo",
+                    438
+                ],
+                [
+                    542,
+                    ".574",
+                    542,
+                    "Stephen Curry",
+                    488
+                ],
+                [
+                    547,
+                    ".520",
+                    547,
+                    "DeMar DeRozan",
+                    456
+                ],
+                [
+                    557,
+                    ".579",
+                    557,
+                    "Karl-Anthony Towns",
+                    424
+                ],
+                [
+                    568,
+                    ".534",
+                    568,
+                    "Anthony Davis",
+                    457
+                ],
+                [
+                    591,
+                    ".484",
+                    591,
+                    "Paul George",
+                    521
+                ],
+                [
+                    599,
+                    ".533",
+                    599,
+                    "Donovan Mitchell",
+                    486
+                ],
+                [
+                    600,
+                    ".538",
+                    600,
+                    "Miles Bridges",
+                    447
+                ],
+                [
+                    601,
+                    ".498",
+                    601,
+                    "Anthony Edwards",
+                    489
+                ],
+                [
+                    633,
+                    ".479",
+                    633,
+                    "De'Aaron Fox",
+                    455
+                ],
+                [
+                    659,
+                    ".488",
+                    659,
+                    "James Harden",
+                    381
+                ],
+                [
+                    663,
+                    ".511",
+                    663,
+                    "Luka Don\u010di\u0107",
+                    447
+                ],
+                [
+                    670,
+                    ".490",
+                    670,
+                    "Russell Westbrook",
+                    439
+                ],
+                [
+                    684,
+                    ".556",
+                    684,
+                    "Jonas Valan\u010di\u016bnas",
+                    391
+                ],
+                [
+                    688,
+                    ".624",
+                    688,
+                    "Nikola Joki\u0107",
+                    354
+                ],
+                [
+                    691,
+                    ".479",
+                    691,
+                    "Bradley Beal",
+                    449
+                ]
+            ],
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8,
+                "formatter": function(params){return params.value[3];}
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                ""
+            ],
+            "selected": {
+                "": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "formatter": function (params) {return '\u547d\u4e2d\u6570:'+ params.value[0] + ' \u51fa\u624b\u6570:' + params.value[4] +' \u547d\u4e2d\u7387' + params.value[1];},
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "xAxis": [
+        {
+            "type": "value",
+            "name": "\u5f97\u5206",
+            "show": true,
+            "scale": false,
+            "nameLocation": "center",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "min": 509,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                519,
+                521,
+                526,
+                527,
+                538,
+                542,
+                547,
+                557,
+                568,
+                591,
+                599,
+                600,
+                601,
+                633,
+                659,
+                663,
+                670,
+                684,
+                688,
+                691
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "type": "value",
+            "name": "\u771f\u5b9e\u547d\u4e2d\u7387",
+            "show": true,
+            "scale": false,
+            "nameLocation": "center",
+            "nameGap": 30,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "min": 0.43,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
+    "title": [
+        {
+            "text": "\u672c\u8d5b\u5b63\u5f97\u5206\u524d20\u540d\u7684\u5f97\u5206\u6548\u7387",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ]
+};
+        chart_8d5dc4259a3b4dbb92ef17e166f289c9.setOption(option_8d5dc4259a3b4dbb92ef17e166f289c9);
+    </script>
+</body>
+</html>

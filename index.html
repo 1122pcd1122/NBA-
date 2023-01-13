@@ -1,0 +1,167 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>nba数据可视化</title>
+
+	<link href="resources/plugins/fullPage/jquery.fullPage.css" rel="stylesheet"/>
+	<link href="resources/plugins/bootstrap-3.3.0/css/bootstrap.min.css" rel="stylesheet"/>
+	<link href="resources/plugins/material-design-iconic-font-2.2.0/css/material-design-iconic-font.min.css" rel="stylesheet"/>
+	<link href="resources/plugins/waves-0.7.5/waves.min.css" rel="stylesheet"/>
+	<link href="resources/plugins/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+	<link href="resources/css/admin.css" rel="stylesheet"/>
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.staticfile.org/foundation/5.5.3/js/foundation.min.js"></script>
+	<script src="https://cdn.staticfile.org/foundation/5.5.3/js/vendor/modernizr.js"></script>
+
+
+	<style>
+	/** skins **/
+	#zheng-upms-server #header {background: #29A176;}
+	#zheng-upms-server .content_tab{background: #29A176;}
+	#zheng-upms-server .s-profile>a{background: url(resources/images/zheng-upms.png) left top no-repeat;}
+	
+	#zheng-cms-admin #header {background: #455EC5;}
+	#zheng-cms-admin .content_tab{background: #455EC5;}
+	#zheng-cms-admin .s-profile>a{background: url(resources/images/zheng-cms.png) left top no-repeat;}
+	
+	#zheng-pay-admin #header {background: #F06292;}
+	#zheng-pay-admin .content_tab{background: #F06292;}
+	#zheng-pay-admin .s-profile>a{background: url(resources/images/zheng-pay.png) left top no-repeat;}
+	
+	#zheng-ucenter-home #header {background: #6539B4;}
+	#zheng-ucenter-home .content_tab{background: #6539B4;}
+	#zheng-ucenter-home .s-profile>a{background: url(resources/images/zheng-ucenter.png) left top no-repeat;}
+	
+	#zheng-oss-web #header {background: #0B8DE5;}
+	#zheng-oss-web .content_tab{background: #0B8DE5;}
+	#zheng-oss-web .s-profile>a{background: url(resources/images/zheng-oss.png) left top no-repeat;}
+	
+	#test #header {background: test;}
+	#test .content_tab{background: test;}
+	#test .s-profile>a{background: url(test) left top no-repeat;}
+	</style>
+</head>
+<body>
+<header id="header">
+	<ul id="menu">
+		<li id="guide" class="line-trigger">
+			<div class="line-wrap">
+				<div class="line top"></div>
+				<div class="line center"></div>
+				<div class="line bottom"></div>
+			</div>
+		</li>
+		<li id="logo" class="hidden-xs">
+			<span id="system_title">NBA数据可视化</span>
+		</li>
+	</ul>
+</header>
+<section id="main">
+	<!-- 左侧导航区 -->
+	<aside id="sidebar">
+		<!-- 菜单区 -->
+		<ul class="main-menu">
+			<li class="sub-menu system_menus system_1 15">
+			<a class="waves-effect" href="javascript:"><i class="zmdi zmdi-accounts-list"></i> 效率</a>
+			<ul>
+				<li><a class="waves-effect" href="javascript:Tab.addTab('球队效率', 'efficiency/html/allEfficiency.html');">球队效率</a></li>
+				<li><a class="waves-effect" href="javascript:Tab.addTab('所有球队排名', 'efficiency/html/rankAllTeam.html');">所有球队排名</a></li>
+				<li><a class="waves-effect" href="javascript:Tab.addTab('西部球队排名', 'efficiency/html/rankWest.html');">西部球队排名</a></li>
+				<li><a class="waves-effect" href="javascript:Tab.addTab('东部球队排名', 'efficiency/html/rankEast.html');">东部球队排名</a></li>
+			</ul>
+			</li>
+			<li class="sub-menu system_menus system_1 0">
+			<a class="waves-effect" href="javascript:"><i class="zmdi zmdi-accounts-list"></i> 三分</a>
+			<ul>
+				<li><a class="waves-effect" href="javascript:Tab.addTab('排名', 'threePoint/html/threeRankTable.html');">排名</a></li>
+				<li><a class="waves-effect" href="javascript:Tab.addTab('效率', 'threePoint/html/threePointScatter.html');">效率</a></li>
+				<li><a class="waves-effect" href="javascript:Tab.addTab('投中数', 'threePoint/html/threePoint.html');">投中数</a></li>
+			</ul>
+			</li>
+			<li class="sub-menu system_menus system_1 3">
+			<a class="waves-effect" href="javascript:"><i class="zmdi zmdi-accounts"></i> 两分</a>
+			<ul>
+				<li><a class="waves-effect" href="javascript:Tab.addTab('排名', 'twoPoint/html/twoRankTable.html');">排名</a></li>
+				<li><a class="waves-effect" href="javascript:Tab.addTab('效率', 'twoPoint/html/twoPointScatter.html');">效率</a></li>
+				<li><a class="waves-effect" href="javascript:Tab.addTab('投中数', 'twoPoint/html/twoPoint.html');">投中数</a></li>
+
+			</ul>
+			</li>
+			<li class="sub-menu system_menus system_1 6">
+			<a class="waves-effect" href="javascript:;"><i class="zmdi zmdi-lock-outline"></i> 得分</a>
+			<ul>
+				<li><a class="waves-effect" href="javascript:Tab.addTab('排名', 'scored/html/scoredRankTable.html');">排名</a></li>
+				<li><a class="waves-effect" href="javascript:Tab.addTab('效率', 'scored/html/scoredScatter.html');">效率</a></li>
+				<li><a class="waves-effect" href="javascript:Tab.addTab('得分', 'scored/html/scored.html');">得分</a></li>
+			</ul>
+			</li>
+			<li class="sub-menu system_menus system_1 7">
+			<a class="waves-effect" href="javascript:;"><i class="zmdi zmdi-more"></i> 西部球队</a>
+			<ul>
+				<li><a class="waves-effect" href="javascript:Tab.addTab('勇士', 'team/html/GSW.html');">勇士</a></li>
+				<li><a class="waves-effect" href="javascript:Tab.addTab('太阳', 'team/html/PHO.html');">太阳</a></li>
+				<li><a class="waves-effect" href="javascript:Tab.addTab('爵士', 'team/html/UTA.html');">爵士</a></li>
+				<li><a class="waves-effect" href="javascript:Tab.addTab('独行侠', 'team/html/DAL.html');">独行侠</a></li>
+				<li><a class="waves-effect" href="javascript:Tab.addTab('快船', 'team/html/LAC.html');">快船</a></li>
+				<li><a class="waves-effect" href="javascript:Tab.addTab('开拓者', 'team/html/POR.html');">开拓者</a></li>
+				<li><a class="waves-effect" href="javascript:Tab.addTab('灰熊', 'team/html/MEM.html');">灰熊</a></li>
+				<li><a class="waves-effect" href="javascript:Tab.addTab('森林狼', 'team/html/MIN.html');">森林狼</a></li>
+				<li><a class="waves-effect" href="javascript:Tab.addTab('湖人', 'team/html/LAL.html');">湖人</a></li>
+				<li><a class="waves-effect" href="javascript:Tab.addTab('掘金', 'team/html/DEN.html');">掘金</a></li>
+				<li><a class="waves-effect" href="javascript:Tab.addTab('国王', 'team/html/SAC.html');">国王</a></li>
+				<li><a class="waves-effect" href="javascript:Tab.addTab('雷霆', 'team/html/OKC.html');">雷霆</a></li>
+				<li><a class="waves-effect" href="javascript:Tab.addTab('醍醐', 'team/html/NOP.html');">鹈鹕</a></li>
+				<li><a class="waves-effect" href="javascript:Tab.addTab('火箭', 'team/html/HOU.html');">火箭</a></li>
+				<li><a class="waves-effect" href="javascript:Tab.addTab('马刺', 'team/html/SAS.html');">马刺</a></li>
+
+			</ul>
+			</li>
+			<li class="sub-menu system_menus system_1 12">
+			<a class="waves-effect" href="javascript:;"><i class="zmdi zmdi-menu"></i> 东部球队</a>
+			<ul>
+					<li><a class="waves-effect" href="javascript:Tab.addTab('篮网', 'team/html/BRK.html');">篮网</a></li>
+					<li><a class="waves-effect" href="javascript:Tab.addTab('热火', 'team/html/MIA.html');">热火</a></li>
+					<li><a class="waves-effect" href="javascript:Tab.addTab('公牛', 'team/html/CHI.html');">公牛</a></li>
+					<li><a class="waves-effect" href="javascript:Tab.addTab('奇才', 'team/html/WAS.html');">奇才</a></li>
+					<li><a class="waves-effect" href="javascript:Tab.addTab('黄蜂', 'team/html/CHO.html');">黄蜂</a></li>
+					<li><a class="waves-effect" href="javascript:Tab.addTab('雄鹿', 'team/html/MIL.html');">雄鹿</a></li>
+					<li><a class="waves-effect" href="javascript:Tab.addTab('尼克斯', 'team/html/NYK.html');">尼克斯</a></li>
+					<li><a class="waves-effect" href="javascript:Tab.addTab('76人', 'team/html/PHI.html');">76人</a></li>
+					<li><a class="waves-effect" href="javascript:Tab.addTab('老鹰', 'team/html/ATL.html');">老鹰</a></li>
+					<li><a class="waves-effect" href="javascript:Tab.addTab('凯尔特人', 'team/html/BOS.html');">凯尔特人</a></li>
+					<li><a class="waves-effect" href="javascript:Tab.addTab('骑士', 'team/html/CLE.html');">骑士</a></li>
+					<li><a class="waves-effect" href="javascript:Tab.addTab('猛龙', 'team/html/TOR.html');">猛龙</a></li>
+					<li><a class="waves-effect" href="javascript:Tab.addTab('步行者', 'team/html/IND.html');">步行者</a></li>
+					<li><a class="waves-effect" href="javascript:Tab.addTab('活塞', 'team/html/DET.html');">活塞</a></li>
+					<li><a class="waves-effect" href="javascript:Tab.addTab('魔术', 'team/html/ORL.html');">魔术</a></li>
+			</ul>
+			</li>
+		</ul>
+		<!-- /菜单区 -->
+	</aside>
+	<!-- /左侧导航区 -->
+	<section id="content">
+		<div class="content_main">
+			
+		</div>
+	</section>
+</section>
+
+<script src="resources/plugins/jquery.1.12.4.min.js"></script>
+<script src="resources/plugins/bootstrap-3.3.0/js/bootstrap.min.js"></script>
+<script src="resources/plugins/waves-0.7.5/waves.min.js"></script>
+<script src="resources/plugins/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="resources/plugins/BootstrapMenu.min.js"></script>
+<script src="resources/plugins/device.min.js"></script>
+<script src="resources/plugins/fullPage/jquery.fullPage.min.js"></script>
+<script src="resources/plugins/fullPage/jquery.jdirk.min.js"></script>
+<script src="resources/plugins/jquery.cookie.js"></script>
+
+<script src="resources/js/admin.js"></script>
+
+
+</body>
+</html>
